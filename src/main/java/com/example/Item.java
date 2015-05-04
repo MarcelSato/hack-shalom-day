@@ -56,8 +56,8 @@ public class Item implements Comparable<Item> {
     @Override
     public String toString() {
         return "Item [" +
-                "value=" + value +
-                ", count=" + count +
-                ']';
+                "value = " + value +
+                ", count = " + count +
+                "]\n";
     }
 }

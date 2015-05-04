@@ -1,2 +1,2 @@
-This is a exercise project.
+This is an exercise project.
 
