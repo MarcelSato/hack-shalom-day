@@ -3,7 +3,7 @@ package main.java.com.example;
 import java.util.*;
 
 /**
- * Created by marcelsato on 5/3/15. NEW BRANCH
+ * Created by marcelsato on 5/3/15. Master
  */
 public class HelloHackShalomDay {
 
