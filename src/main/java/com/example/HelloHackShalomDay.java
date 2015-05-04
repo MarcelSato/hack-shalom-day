@@ -3,7 +3,7 @@ package main.java.com.example;
 import java.util.*;
 
 /**
- * Created by marcelsato on 5/3/15. Pesquisar recursão
+ * Created by marcelsato on 5/3/15.
  */
 public class HelloHackShalomDay {
 
@@ -52,6 +52,7 @@ public class HelloHackShalomDay {
 
             for(int j = i + 1; j < numbers.size(); j++){
                 if(numbers.get(i) == numbers.get(j)){
+
                     if(result.contains(item)) {
                         int index = result.indexOf(item);
                         result.get(index).addCount();
@@ -62,12 +63,12 @@ public class HelloHackShalomDay {
 
 //                    result.equals(numbers.get(i) + " " + count);
                 }
-                //count = 0;
+
+        Collections.sort(result);    //count = 0;
             }
         }
-        Collections.sort(result);
-        return result.toString();
+                //try recursion        return result.toString();
     }
-                //try recursion
+
 
 }
