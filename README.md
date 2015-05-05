@@ -1,2 +1,1 @@
-This is an exercise project.
-Master.
+Another solution using a recursive method
