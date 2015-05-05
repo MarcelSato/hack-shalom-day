@@ -32,11 +32,23 @@ public class HelloHackShalomDay {
         numbers2.add(1);
         numbers2.add(2);
 
+
+        List<Integer> numbers3 = new ArrayList<>();
+        numbers3.add(13);
+        numbers3.add(14);
+        numbers3.add(11);
+        numbers3.add(12);
+        numbers3.add(12);
+        numbers3.add(13);
+        numbers3.add(10);
+        numbers3.add(19);
+
 //        numbers2.get(0)
 //        numbers2.remove(0)
 
-        System.out.println(showResult(numbers1));
-        System.out.println(showResult(numbers2));
+        System.out.println("List 1" + showResult(numbers1) + "\n");
+        System.out.println("List 2" + showResult(numbers2) + "\n");
+        System.out.println("List 3" + showResult(numbers3) + "\n");
 
     }
 
