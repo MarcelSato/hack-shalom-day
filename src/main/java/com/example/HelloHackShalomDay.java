@@ -58,41 +58,52 @@ public class HelloHackShalomDay {
         numbers5.add(5);
         numbers5.add(5);
 
-        System.out.println("List 1" + showResult(numbers1) + "\n");
-        System.out.println("List 2" + showResult(numbers2) + "\n");
-        System.out.println("List 3" + showResult(numbers3) + "\n");
-        System.out.println("List 4" + showResult(numbers4) + "\n");
-        System.out.println("List 5" + showResult(numbers5) + "\n");
+        System.out.println("List 1 " + showResult(numbers1) + "\n");
+        System.out.println("List 2 " + showResult(numbers2) + "\n");
+        System.out.println("List 3 " + showResult(numbers3) + "\n");
+        System.out.println("List 4 " + showResult(numbers4) + "\n");
+        System.out.println("List 5 " + showResult(numbers5) + "\n");
     }
 
 
     public static Object showResult(List<Integer> numbers){
-        int count = 0;
-        List<Item> result = new ArrayList<>();
-        for(int i  = 0; i < numbers.size(); i++){
-            Item item = new Item();
-            item.setValue(numbers.get(i));
-            if(result.contains(item))
-                continue;
 
-            for(int j = i + 1; j < numbers.size(); j++){
-                if(numbers.get(i) == numbers.get(j)){
-
-                    if(result.contains(item)) {
-                        int index = result.indexOf(item);
-                        result.get(index).addCount();
-                    } else {
-                        item.addCount();
-                        result.add(item);
-                    }
-
-//                    result.equals(numbers.get(i) + " " + count); // Wrong
-                }
-
-        Collections.sort(result);    //count = 0;
-            }
+//        List<Item> result = new ArrayList<>();
+//        for(int i  = 0; i < numbers.size(); i++){
+//            Item item = new Item();
+//            item.setValue(numbers.get(i));
+//            if(result.contains(item))
+//                continue;
+//
+//            for(int j = i + 1; j < numbers.size(); j++){
+//                if(numbers.get(i) == numbers.get(j)){
+//
+//                    if(result.contains(item)) {
+//                        int index = result.indexOf(item);
+//                        result.get(index).addCount();
+//                    } else {
+//                        item.addCount();
+//                        result.add(item);
+//                    }
+//                }
+//        Collections.sort(result);
+//            }
+//        }
+//        return result.toString();
+        List<Integer> dp = new ArrayList<>();
+        int head = numbers.get(0);
+        numbers.remove(0);
+        for(int i = 0; i < numbers.size(); i++){
+            if(head == numbers.get(i)) dp.add(numbers.get(i));
         }
-                return result.toString();
+        System.out.println(dp.toString());
+        if(numbers.size() == 0) return dp.toString();
+        return showResult(numbers);
+    }
+
+    public static List findDuplicates(){
+
+        return 
     }
 
 
