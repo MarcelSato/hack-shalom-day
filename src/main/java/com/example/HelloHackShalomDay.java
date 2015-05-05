@@ -26,11 +26,20 @@ public class HelloHackShalomDay {
         numbers2.add(1);
         numbers2.add(2);
 
+        List<Integer> numbers4 = new ArrayList<>();
+        numbers4.add(3);
+        numbers4.add(4);
+        numbers4.add(1);
+        numbers4.add(2);
+        numbers4.add(3);
+        numbers4.add(2);
+
 //        numbers2.get(0)
 //        numbers2.remove(0)
 
         System.out.println(showResult(numbers1));
         System.out.println(showResult(numbers2));
+        System.out.println(showResult(numbers4));
 
     }
 
