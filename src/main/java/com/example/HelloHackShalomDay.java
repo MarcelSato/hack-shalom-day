@@ -61,13 +61,13 @@ public class HelloHackShalomDay {
                         result.add(item);
                     }
 
-//                    result.equals(numbers.get(i) + " " + count);
+//                    result.equals(numbers.get(i) + " " + count); // Wrong
                 }
 
         Collections.sort(result);    //count = 0;
             }
         }
-                //try recursion        return result.toString();
+                return result.toString();
     }
 
 
