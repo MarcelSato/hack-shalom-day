@@ -32,6 +32,7 @@ public class HelloHackShalomDay {
         numbers2.add(1);
         numbers2.add(2);
 
+<<<<<<< HEAD
 
         List<Integer> numbers3 = new ArrayList<>();
         numbers3.add(13);
@@ -42,13 +43,28 @@ public class HelloHackShalomDay {
         numbers3.add(13);
         numbers3.add(10);
         numbers3.add(19);
+=======
+        List<Integer> numbers4 = new ArrayList<>();
+        numbers4.add(3);
+        numbers4.add(4);
+        numbers4.add(1);
+        numbers4.add(2);
+        numbers4.add(3);
+        numbers4.add(2);
+>>>>>>> newBranch
 
 //        numbers2.get(0)
 //        numbers2.remove(0)
 
+<<<<<<< HEAD
         System.out.println("List 1" + showResult(numbers1) + "\n");
         System.out.println("List 2" + showResult(numbers2) + "\n");
         System.out.println("List 3" + showResult(numbers3) + "\n");
+=======
+        System.out.println(showResult(numbers1));
+        System.out.println(showResult(numbers2));
+        System.out.println(showResult(numbers4));
+>>>>>>> newBranch
 
     }
 
