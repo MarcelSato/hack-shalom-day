@@ -3,11 +3,7 @@ package main.java.com.example;
 import java.util.*;
 
 /**
-<<<<<<< HEAD
  * Created by marcelsato on 5/3/15. Master
-=======
- * Created by marcelsato on 5/3/15. New Branch
->>>>>>> newBranch
  */
 public class HelloHackShalomDay {
 
@@ -22,6 +18,12 @@ public class HelloHackShalomDay {
         numbers1.add(2);
         numbers1.add(1);
         numbers1.add(3);
+        numbers1.add(3);
+        numbers1.add(2);
+        numbers1.add(4);
+        numbers1.add(7);
+        numbers1.add(2);
+        numbers1.add(7);
 
 
         List<Integer> numbers2 = new ArrayList<>();
@@ -65,11 +67,7 @@ public class HelloHackShalomDay {
         Collections.sort(result);    //count = 0;
             }
         }
-<<<<<<< HEAD
                 return result.toString();
-=======
-                        return result.toString();
->>>>>>> newBranch
     }
 
 
