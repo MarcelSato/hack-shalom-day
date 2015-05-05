@@ -1,1 +1,2 @@
-This is an exercise project. Master branch.
+This is an exercise project.
+Master branch.
