@@ -25,13 +25,11 @@ public class HelloHackShalomDay {
         numbers1.add(2);
         numbers1.add(7);
 
-
         List<Integer> numbers2 = new ArrayList<>();
         numbers2.add(3);
         numbers2.add(4);
         numbers2.add(1);
         numbers2.add(2);
-
 
         List<Integer> numbers3 = new ArrayList<>();
         numbers3.add(13);
@@ -51,14 +49,19 @@ public class HelloHackShalomDay {
         numbers4.add(3);
         numbers4.add(2);
 
-//        numbers2.get(0)
-//        numbers2.remove(0)
-
+        List<Integer> numbers5 = new ArrayList<>();
+        numbers5.add(9);
+        numbers5.add(8);
+        numbers5.add(7);
+        numbers5.add(6);
+        numbers5.add(5);
+        numbers5.add(5);
 
         System.out.println("List 1" + showResult(numbers1) + "\n");
         System.out.println("List 2" + showResult(numbers2) + "\n");
         System.out.println("List 3" + showResult(numbers3) + "\n");
         System.out.println("List 4" + showResult(numbers4) + "\n");
+        System.out.println("List 5" + showResult(numbers5) + "\n");
 
     }
 
