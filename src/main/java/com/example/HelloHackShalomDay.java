@@ -65,46 +65,17 @@ public class HelloHackShalomDay {
         System.out.println("List 5 " + showResult(numbers5) + "\n");
     }
 
-
     public static Object showResult(List<Integer> numbers){
-
-//        List<Item> result = new ArrayList<>();
-//        for(int i  = 0; i < numbers.size(); i++){
-//            Item item = new Item();
-//            item.setValue(numbers.get(i));
-//            if(result.contains(item))
-//                continue;
-//
-//            for(int j = i + 1; j < numbers.size(); j++){
-//                if(numbers.get(i) == numbers.get(j)){
-//
-//                    if(result.contains(item)) {
-//                        int index = result.indexOf(item);
-//                        result.get(index).addCount();
-//                    } else {
-//                        item.addCount();
-//                        result.add(item);
-//                    }
-//                }
-//        Collections.sort(result);
-//            }
-//        }
-//        return result.toString();
         List<Integer> dp = new ArrayList<>();
+        return findDuplicates(numbers, dp);
+    }
+    public static List findDuplicates(List<Integer> numbers, List<Integer> dp){
         int head = numbers.get(0);
         numbers.remove(0);
         for(int i = 0; i < numbers.size(); i++){
-            if(head == numbers.get(i)) dp.add(numbers.get(i));
+            if(head == numbers.get(i) && !dp.contains(head)) dp.add(numbers.get(i));
         }
-        System.out.println(dp.toString());
-        if(numbers.size() == 0) return dp.toString();
-        return showResult(numbers);
+        if(numbers.size() == 0) return Collections.sort(dp);
+        return findDuplicates(numbers, dp);
     }
-
-    public static List findDuplicates(){
-
-        return
-    }
-
-
 }
