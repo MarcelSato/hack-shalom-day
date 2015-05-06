@@ -103,7 +103,7 @@ public class HelloHackShalomDay {
 
     public static List findDuplicates(){
 
-        return 
+        return
     }
 
 
