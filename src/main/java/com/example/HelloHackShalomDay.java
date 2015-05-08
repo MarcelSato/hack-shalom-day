@@ -4,6 +4,7 @@ import java.util.*;
 
 /**
  * Created by marcelsato on 5/3/15. Master
+ * Recursion
  */
 public class HelloHackShalomDay {
 
@@ -57,44 +58,61 @@ public class HelloHackShalomDay {
         numbers5.add(5);
         numbers5.add(5);
 
-        System.out.println("List 1" + showResult(numbers1) + "\n");
-        System.out.println("List 2" + showResult(numbers2) + "\n");
-        System.out.println("List 3" + showResult(numbers3) + "\n");
-        System.out.println("List 4" + showResult(numbers4) + "\n");
-        System.out.println("List 5" + showResult(numbers5) + "\n");
-    // Comment to test repository
-        // Another comment
+        System.out.println("List 1 " + numbers1 + "\nDuplicates " + showResult2(numbers1) + "\n");
+        System.out.println("List 2 " + numbers2 + "\nDuplicates " + showResult2(numbers2) + "\n");
+        System.out.println("List 3 " + numbers3 + "\nDuplicates " + showResult2(numbers3) + "\n");
+        System.out.println("List 4 " + numbers4 + "\nDuplicates " + showResult2(numbers4) + "\n");
+        System.out.println("List 5 " + numbers5 + "\nDuplicates " + showResult2(numbers5) + "\n");
+
     }
 
+    public static List showResult(List<Integer> numbers){
+        List<Integer> dp = new ArrayList<>();
+        return findDuplicates2(numbers, dp);
+    }
 
-    public static Object showResult(List<Integer> numbers){
-        int count = 0;
-        List<Item> result = new ArrayList<>();
-        for(int i  = 0; i < numbers.size(); i++){
-            Item item = new Item();
-            item.setValue(numbers.get(i));
-            if(result.contains(item))
-                continue;
-
-            for(int j = i + 1; j < numbers.size(); j++){
-                if(numbers.get(i) == numbers.get(j)){
-
-                    if(result.contains(item)) {
-                        int index = result.indexOf(item);
-                        result.get(index).addCount();
-                    } else {
-                        item.addCount();
-                        result.add(item);
-                    }
-
-//                    result.equals(numbers.get(i) + " " + count); // Wrong
-                }
-
-        Collections.sort(result);    //count = 0;
-            }
+    public static List findDuplicates(List<Integer> numbers, List<Integer> dp){
+        int head = numbers.get(0);
+        numbers.remove(0);
+        for(int i = 0; i < numbers.size(); i++){
+            if(head == numbers.get(i) && !dp.contains(head)) dp.add(numbers.get(i));
         }
-                return result.toString();
+        Collections.sort(dp);
+        if(numbers.size() == 0) return dp;
+        return findDuplicates(numbers, dp);
     }
 
+    public static List showResult2(List<Integer> numbers){
+        List<Integer> dp = new ArrayList<>();
+        final List duplicates2 = findDuplicates2(numbers, dp);
+        Collections.sort(duplicates2);
+        return duplicates2;
+    }
 
+    /**
+     * The recursion needs three basic conditions:
+     *
+     * 1 - You need to pass the 'accumulator' which saves the context of all recursion calls
+     *  and contains the final result
+     *
+     * 2 - The recursive method has to start with the stop condition which defines when the recursion
+     *  needs to stop and the result in the accumulator is ready to be returned
+     *
+     * 3 - No internal loops! The recursion by its own is a kind of loop managed by the method stack
+     *  calls (I can explain that better later for you).
+     *
+     *
+     * @param numbers
+     * @param dp
+     * @return
+     */
+    public static List findDuplicates2(List<Integer> numbers, List<Integer> dp) {
+        // stop condition
+        if (numbers.isEmpty()) return dp;
+
+        final Integer head = numbers.remove(0);
+        if (numbers.contains(head) && !dp.contains(head)) dp.add(head);
+
+        return findDuplicates2(numbers, dp);
+    }
 }
