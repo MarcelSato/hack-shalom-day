@@ -105,6 +105,9 @@ public class HelloHackShalomDay {
      * @param numbers
      * @param dp
      * @return
+     *
+     *
+     * Nice thanks for that, I got it now!!
      */
     public static List findDuplicates2(List<Integer> numbers, List<Integer> dp) {
         // stop condition
