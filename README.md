@@ -1,5 +1,2 @@
 This is an exercise project.
-Master branch.
-Testing.
-Clelio's repo.
-
+Recursion and loop methods done.
