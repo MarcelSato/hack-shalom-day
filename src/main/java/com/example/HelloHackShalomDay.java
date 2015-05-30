@@ -4,13 +4,12 @@ import java.util.*;
 
 /**
  * Created by marcelsato on 5/3/15. Master
- *
- *
  */
 public class HelloHackShalomDay {
 
     public static void main(String[] args) {
         System.out.println("Hello Shalom Hack Day!!!!\n");
+
 
         List<Integer> numbers1 = new ArrayList<>();
         numbers1.add(3);
@@ -67,6 +66,7 @@ public class HelloHackShalomDay {
         // Another comment
     }
 
+
     public static Object showResult(List<Integer> numbers){
         int count = 0;
         List<Item> result = new ArrayList<>();
@@ -95,5 +95,6 @@ public class HelloHackShalomDay {
         }
                 return result.toString();
     }
+
 
 }
