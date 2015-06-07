@@ -57,6 +57,10 @@ public class HelloHackShalomDay {
         numbers5.add(6);
         numbers5.add(5);
         numbers5.add(5);
+        numbers5.add(5);
+        numbers5.add(5);
+        numbers5.add(5);
+        numbers5.add(5);
 
         System.out.println("List 1 " + numbers1 + "\nDuplicates " + showResult2(numbers1) + "\n");
         System.out.println("List 2 " + numbers2 + "\nDuplicates " + showResult2(numbers2) + "\n");
