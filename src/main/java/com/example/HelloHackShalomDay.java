@@ -11,7 +11,6 @@ public class HelloHackShalomDay {
     public static void main(String[] args) {
         System.out.println("Hello Shalom Hack Day!!!!\n");
 
-
         List<Integer> numbers1 = new ArrayList<>();
         numbers1.add(3);
         numbers1.add(4);
@@ -120,6 +119,7 @@ public class HelloHackShalomDay {
      *
      * Nice thanks for that, I got it now!!
      */
+     
     public static List findDuplicates2(List<Integer> numbers, List<Integer> dp) {
         // stop condition
         if (numbers.isEmpty()) return dp;
