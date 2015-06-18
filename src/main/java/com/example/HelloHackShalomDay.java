@@ -27,10 +27,17 @@ public class HelloHackShalomDay {
         numbers1.add(7);
 
         List<Integer> numbers2 = new ArrayList<>();
-        numbers2.add(3);
-        numbers2.add(4);
         numbers2.add(1);
         numbers2.add(2);
+        numbers2.add(3);
+        numbers2.add(4);
+        numbers2.add(5);
+        numbers2.add(6);
+        numbers2.add(7);
+        numbers2.add(8);
+        numbers2.add(9);
+        numbers2.add(10);
+        numbers2.add(11);
 
         List<Integer> numbers3 = new ArrayList<>();
         numbers3.add(13);
