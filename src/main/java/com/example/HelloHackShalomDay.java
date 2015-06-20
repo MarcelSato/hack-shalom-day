@@ -6,6 +6,7 @@ import java.util.*;
  * Created by marcelsato on 5/3/15. Master
  * Recursion
  */
+
 public class HelloHackShalomDay {
 
     public static void main(String[] args) {
